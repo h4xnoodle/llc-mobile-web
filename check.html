@@ -14,24 +14,24 @@
     /* 
     The CSS media queries.
 
-    max-device-width: the number of pixels the device can display in width or less.
-    min-device-width: the number of pixels the device can display in width or more.
+    max-width: the number of pixels the screen on the device can display in width or less.
+    min-width: the number of pixels the screen on the device can display in width or more.
     orientation: most modern devices can give us their orientation. This can be helpful for deciding between larger Android/BlackBerry phones in landscape vs. tablets in portrait.
     */ 
 
     /* Small phones - the easiest case */
-    @media screen and (max-device-width: 800px) {
+    @media screen and (max-width: 800px) {
       .small { display: block; }
     }
 
     /* Larger devices */
     /* Loosely covers larger BlackBerrys and Androids, and tablets */
-    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
        .larger { display: block; }
     }
 
     /* Regular ol' desktop */
-    @media screen and (min-device-width: 1025px) {
+    @media screen and (min-width: 1025px) {
       .desktop { display: block; }
     }
     
@@ -63,7 +63,7 @@
 	</style>
 </head>
 <body>
-<h1>Exercise #4 - Browser/Device Detection</h1>
+<h1>Exercise #3 - Browser/Device Detection</h1>
 
 <div class='wrap'>
 

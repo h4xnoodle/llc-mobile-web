@@ -21,13 +21,13 @@ body {
   color:#b1009a;
 }
 
-/* Exercise #11 */
+/* Exercise #10 */
 
 /* Container */
 .container {
   padding:30px 0;
 
-  /* Exercise 8 */
+  /* Exercise #9 */
   width:960px;
 
   margin:0 auto;
@@ -36,7 +36,7 @@ body {
 
 /* Header */
 .header {
-  /* Exercise 7 */
+  /* Exercise 6 */
   height:240px;
   background:#0d0d0d url('images/header.png') right top no-repeat;
 
@@ -60,7 +60,7 @@ ul {
 
 /* Sidebar - categories and cart */
 .sidebar {
-  /* Exercise 8 */
+  /* Exercise 7 */
   float:right;
   width:230px;
 
@@ -70,10 +70,10 @@ ul {
   padding:0;
 }
 .categories ul li a {
-  /* Exercise #10 */
+  /* Exercise #9 */
 
   margin:4px 0;
-  font-size:12px; /* Remove for exercise 10 */
+  font-size:12px; /* Remove for exercise 9 */
   color:#444444;
 }
 .categories ul li a:hover {
@@ -102,7 +102,7 @@ ul {
 
 /* Content section */
 .content {
-  /* Exercise 8 */
+  /* Exercise 7 */
   width:640px;
   float:left;
 }
