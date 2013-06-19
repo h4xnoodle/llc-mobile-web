@@ -109,6 +109,8 @@ ul {
 .content p {
   line-height:19px;
 }
+
+/* Exercise 7 */
 .item {
   display:inline-block;
   vertical-align:top;

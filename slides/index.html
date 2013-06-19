@@ -559,7 +559,7 @@
     <div class='slide' id='css-intro-5'>
       <header><h1>Example</h1></header>
       <section>
-        <pre>&lt;p&gt;I'm just blue!&lt;/&gt;
+        <pre>&lt;p&gt;I'm just blue!&lt;/p&gt;
 &lt;p class='yellow'&gt;I'm yellow :)&lt;/p&gt;</pre>
         <pre>p {
   color:blue;
@@ -683,7 +683,7 @@ p.purple {
       <header><h1>Exercise #7 - Down to one column</h1></header>
       <section>
         <p>Let's quickly make everything linear</p>
-        <p>In mobile.css, we need to tackle <code>.content</code>, <code>.sidebar</code>, and <code>.content .item</code></p>
+        <p>In mobile.css, we need to tackle <code>.content</code>, <code>.sidebar</code>, and <code>.item</code></p>
         <p>Using <code>width</code>s doesn't really make sense here either, as we want to fill the screen as much as possible.</p>
         <h3>Remove <code>width:</code> and <code>float:</code> (or float:none;)</h3>
         <pre>.sidebar {
@@ -692,7 +692,7 @@ p.purple {
         <pre>.content {
   ...</pre>
         <p>The items...</p>
-        <pre>.content .item {
+        <pre>.item {
   display:block;</pre>
       </section>
     </div>
@@ -749,7 +749,7 @@ p.purple {
         <pre>&lt;head&gt;
   ...
   
-  &lt;!-- Exercise #9 --&gt;
+  &lt;!-- Exercise #8 --&gt;
   &lt;meta name='viewport' content='initial-scale=1, maximum-scale=1' /&gt;
   
 &lt;/head&gt;</pre>
@@ -794,6 +794,10 @@ p.purple {
         <p>When the width of the box is set to, say, 200px, any padding added will increase the size of this box. </p>
         <p>So if we say <code>padding:10px;</code> the box is really 220px wide now. We need to remember this for when we depend on widths for alignment.</p>
         <p>Excruciating detail: <a href='http://www.w3.org/TR/CSS2/box.html'>http://www.w3.org/TR/CSS2/box.html</a></p>
+        <h3>An Alternative</h3>
+        <p>Recently, the CSS property <code>box-sizing: border-box;</code> (IE8+, any Chrome, Safari 5.1+ (webkit-box-sizing in earlier versions), Opera 8.5+).</p>
+        <p>This allows us to picture the box model differently: <strong>adding padding does not increase the width/height anymore.</strong></p>
+        <p><a href="http://css-tricks.com/box-sizing/">More information</a></p>
       </section>
     </div>
 
@@ -822,11 +826,9 @@ p.purple {
     <div class='slide' id='way-to-much'>
       <header><h1>Too Much Scrolling!</h1></header>
       <section>
-        <p style='text-align:center'>Takes too much effort to scroll past the categories and your cart.<br/><br/>
-        FURSTRATING!<br/>
-
-        Mobile users are pretty accustomed to scrolling, but don't make them scroll non-content like navigation.
-        <br /><br/>
+        <p>It takes too much effort to scroll past the categories and your cart.</p>
+        <p>Mobile users are pretty accustomed to scrolling, but don't make them scroll non-content like navigation.</p>
+        <p style='text-align:center;'>
         <img src='assets/bigger-touch.png' style='height:400px'/>
         </p>
       </section>
@@ -984,9 +986,9 @@ p.purple {
     </div>
     
     <div class='slide' id='ex11-optional'>
-      <header><h1>Ex #11 - Optional</h1></header>
+      <header><h1>Ex #11</h1></header>
       <section>
-        <p>Do we want to remove the items from the home page as well?</p>
+        <p>Let's remove the items from the home page as well?</p>
         <h3>If you'd like to, we need to <em>wrap</em> and <em>hide</em> more elements: (index.html)</h3>
         <pre>&lt;div class='desktop-only'&gt;
         
@@ -1056,9 +1058,10 @@ p.purple {
         <p>Here we will explore</p>
         <ul>
           <li>Youtube videos [iPhone, Android]</li>
-          <li>Google Maps [iPhone, Android]</li>
+          <li>Google Maps [opens in Maps app in Android]</li>
         </ul>
         <p>The Android devices have an added benefit of asking you which app you'd like to use.</p>
+        <p><strong>This blends native and web mobile experiences</strong></p>
       </section>
     </div>
 
@@ -1103,6 +1106,22 @@ p.purple {
         <p>Now it will :) This is a good option if your video does not have <em>HTML5 support</em></p>
       </section>
     </div>
+
+    <div class='slide'>
+      <header><h1>Testing and Debugging</h1></header>
+      <section>
+        <p>How do mobile developers debug their mobile websites?</p>
+        <p>Modern browsers have a powerful tool: the web inspector</p>
+        <p><strong>Chrome:</strong> Right click anywhere on a page and 'Inspect Element'</p>
+        <p><strong>Firefox:</strong> Right click anywhere on a page and 'Inspect Element'</p>
+        <p>Let's check it out</p>
+        <ul>
+          <li>Delete HTML and CSS</li>
+          <li>Add HTML and CSS</li>
+          <li>Change colours and sizes quickly without saving and refreshing</li>
+        </ul>
+      </section>
+    </div>
     
     <div class='slide' id='keep-going'>
       <header><h1>Keep going!</h1></header>
@@ -1135,9 +1154,8 @@ p.purple {
       <header><h1>One last thing</h1></header>
       <section>
         <p>We designed our desktop site first, then our mobile site</p>
-        <p>This is easiest for teaching new coders</p>
-        <p>A pro secret: with more complicated websites, it's often easier to design <strong>mobile first</strong></p>
-        <p>It's easy! Design/code your website for your mobile, and then add more styles/media queries for desktop and larger resolutions as you go</p>
+        <p>A lot more people are going to access your website on their mobile devices. Think about mobile at the beginning of your project.</p>
+        <p>"Mobile First" - some companies don't even have desktop websites. EG: Path, Couple, BBM, many more.</p>
         <p>A great tutorial similar to this workshop, going mobile first is found <a href="http://www.html5rocks.com/en/mobile/responsivedesign/">here</a></p>
       </section>
     </div>
